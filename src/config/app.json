@@ -1,0 +1,12 @@
+{
+  "drawerWidth": 260,
+  "timeLineWidth": 60,
+  "startOrder": 10,
+  "lastOrder": 19,
+  "dayOfTheWeek": ["日", "月", "火", "水", "木", "金", "土"],
+  "gapiCal": {
+    "key": "AIzaSyCLqi5tQwWw8qEGAWc9NC1cEU78C4EAWkM",
+    "address": "ja.japanese#holiday@group.v.calendar.google.com",
+    "gurl": "https://www.googleapis.com/calendar/v3/calendars/"
+  }
+}
