@@ -1,12 +1,14 @@
 # Google風タイムテーブルカレンダー
 React.js Rudex TypescriptでGoogle風タイムテーブルカレンダーを試作。  
+  
+デモは[こちら](https://cal1.t-suzu.com/)  
 
 ## 概要
 Google風なタイムテーブルカレンダーをReact、Reduxで試作。祝日はGoogleCalendarAPIから取得。CSSフレームワークは Material UI を使用。
 
 ![demo](/doc/demo.png)
 
-デモ動画
+↓デモ動画
 ![sample](/doc/original.gif)
 
 ## 開発環境
@@ -35,7 +37,7 @@ $ yarn start
 
 ### API KEY 取得方法
 Google Calendar API に自身のアカウントでログインしてください。
-![screen](/doc/screen.png)
+![screen](/doc/screen1.png)
 
 1をクリックして、新しいCloud Platformプロジェクトを作成し、Google CalendarAPIを自動的に有効にします。ダイアログに表示されるクライアントIDをメモします。
 
