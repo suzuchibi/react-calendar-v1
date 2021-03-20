@@ -4,10 +4,10 @@ React.js Rudex TypescriptでGoogle風タイムテーブルカレンダーを試�
 ## 概要
 Google風なタイムテーブルカレンダーをReact、Reduxで試作。祝日はGoogleCalendarAPIから取得。CSSフレームワークは Material UI を使用。
 
-![demo](/uploads/55077b22ecd98686b778b9de161f3f8a/demo.png)
+![demo](/doc/demo.png)
 
 デモ動画
-![sample](/uploads/9916ebd114df4da4152c27c707409da9/sample.mov)
+![sample](/doc/original.gif)
 
 ## 開発環境
 - node.js 14.2+
@@ -31,18 +31,18 @@ $ yarn start
 祝日を表示させたい場合は、あなたのGoogleアカウントでGoogleカレンダーの「APIキー」を取得してください。  
 （Googleアカウントは祝日の取得のみに利用しています。）
 
-![screen3](/uploads/b5cd44db8d17f60b301c675cad8a636c/screen3.png)
+![screen3](/doc/screen3.png)
 
 ### API KEY 取得方法
 Google Calendar API に自身のアカウントでログインしてください。
-![screen](/uploads/80fa2ad325452a3887f0b69aae7ffaba/screen.png)
+![screen](/doc/screen.png)
 
 1をクリックして、新しいCloud Platformプロジェクトを作成し、Google CalendarAPIを自動的に有効にします。ダイアログに表示されるクライアントIDをメモします。
 
 2をクリックして、同じプロジェクトにAPIキーを作成します。ダイアログに表示されるAPIキーをメモします。
 
 以下「APIキー」表示例
-![screen2](/uploads/9b631b2df9f9355c5ab4bdf0b4db36ea/screen2.png)
+![screen2](/doc/screen2.png)
 
 メモした「APIキー」をファイルに追記します。これによりGoogle Carendar API から「日本の祝日」を取得します。  
 src/config/app.json
