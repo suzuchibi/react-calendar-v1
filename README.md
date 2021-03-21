@@ -47,20 +47,14 @@ Google Calendar API に自身のアカウントでログインしてください
 ![screen2](/doc/screen2.png)
 
 メモした「APIキー」をファイルに追記します。これによりGoogle Carendar API から「日本の祝日」を取得します。  
-src/config/app.json
+env.example
 ```
-{
-  "drawerWidth": 260,
-  "timeLineWidth": 60,
-  "startOrder": 10,
-  "lastOrder": 19,
-  "dayOfTheWeek": ["日", "月", "火", "水", "木", "金", "土"],
-  "gapiCal": {
-    "key": "",  // <-- API Key を追加してください。
-    "address": "ja.japanese#holiday@group.v.calendar.google.com",
-    "gurl": "https://www.googleapis.com/calendar/v3/calendars/"
-  }
-}
+REACT_APP_G_CALENDAR_API_KEY= <-- API KEY を追加してください。
+```
+
+次に「env.example」ファイルを「.env」にリネームしてください。
+```
+mv env.example .env
 ```
 
 ## Author
