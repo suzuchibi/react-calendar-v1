@@ -8,7 +8,7 @@ Google風なタイムテーブルカレンダーをReact、Reduxで試作。祝�
 
 ![demo](/doc/demo.png)
 
-↓デモ動画
+↓デモ動画  
 ![sample](/doc/original.gif)
 
 ## 開発環境
