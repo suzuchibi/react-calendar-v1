@@ -18,6 +18,14 @@ Google風なタイムテーブルカレンダーをReact、Reduxで試作。祝�
 - redux 7.2.2
 - typescript 4.0.3
 
+## 対応ブラウザ
+- ○ Google Chrome 最新版
+- △ Fire Fox 最新版
+- △ Safari 最新版
+- ○ Microsoft Edge 最新版  
+
+フォームの日付ピッカー（ネイティブピッカー）は Material UI の仕様のため、ChromeとEdgeのみ対応。
+
 ## 実行方法
 リポジトリをクローンまたはダウンロードしてきたら、パッケージインストール。
 ```
