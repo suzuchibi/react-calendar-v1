@@ -68,6 +68,3 @@ mv env.example .env
 
 ## Author
 Author Toru Suzuki
-
-## License
-Copyright © 2021, Toru Suzuki
