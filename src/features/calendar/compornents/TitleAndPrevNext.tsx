@@ -38,18 +38,18 @@ class TitleAndPrevNext extends React.Component<Props> {
 
   prev() {
     const { current } = this.props;
-    const after = getTime(addMonths(current, -1));
+    const prevTimeStamp = getTime(addMonths(current, -1));
     this.props.changeStatus('idle');
-    this.props.changeCurrent(after);
-    this.props.asyncGoogleCalendar(after, 'cal');
+    this.props.changeCurrent(prevTimeStamp);
+    this.props.asyncGoogleApiSaga('cal', prevTimeStamp);
   }
 
   next() {
     const { current } = this.props;
-    const after = getTime(addMonths(current, 1));
+    const nextTimeStamp = getTime(addMonths(current, 1));
     this.props.changeStatus('idle');
-    this.props.changeCurrent(after);
-    this.props.asyncGoogleCalendar(after, 'cal');
+    this.props.changeCurrent(nextTimeStamp);
+    this.props.asyncGoogleApiSaga('cal', nextTimeStamp);
   }
 
   render() {
@@ -57,9 +57,8 @@ class TitleAndPrevNext extends React.Component<Props> {
     const year = getYear(current);
     const month = getMonth(current);
     const jType = 'ja-JP-u-ca-japanese';
-    const objectSet = { year: 'numeric' };
     const jYear = (y: number, m: number) => {
-      return new Date(y, m, 1).toLocaleDateString(jType, objectSet);
+      return new Date(y, m, 1).toLocaleDateString(jType, { year: 'numeric' });
     };
     const zeroPad = (e: Number) => ('00' + e).slice(-2);
 

@@ -48,17 +48,15 @@ class CalendarLoad extends React.Component<Props, LocalState> {
   }
 
   componentDidMount() {
-    const object: { date?: string } = queryString.parse(
-      this.props.location.search
-    );
-    if (object.date) {
-      const after = this.init(object.date);
-      this.props.changeCurrent(after);
-      this.props.asyncGoogleCalendar(after, 'cal');
+    const qs: { date?: string } = queryString.parse(this.props.location.search);
+    if (qs.date) {
+      const time = this.init(qs.date);
+      this.props.changeCurrent(time);
+      this.props.asyncGoogleApiSaga('cal', time);
     } else {
       if (this.state.status === 'idle') {
         const { current } = this.props;
-        this.props.asyncGoogleCalendar(current, 'cal');
+        this.props.asyncGoogleApiSaga('cal', current);
       }
     }
   }

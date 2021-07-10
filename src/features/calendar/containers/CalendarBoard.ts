@@ -1,19 +1,13 @@
-import { ThunkDispatch } from 'redux-thunk';
+import { Dispatch } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
 import CalendarBoard from '../compornents/CalendarBoard';
 import { RootState } from '../../../app/reducer';
 
 // Actions
 import { changeStatus as changeSchedule } from '../../scheduler/actions/scheduleActions';
-import { asyncGoogleCalendarAction } from '../actions/calendarActions';
-import { ScheduleActionTypes } from '../../scheduler/types';
 import { handleAnchorEl as changeAnchor } from '../../dialog/calendarPoper/actions';
-import { PoperActionTypes } from '../../dialog/calendarPoper/types';
 import { handleDrawer } from '../../side/isDrawerReducer';
-import { DrwerActionTypes } from '../../side/types';
-
-// Combine Types
-type ActionTypes = ScheduleActionTypes | PoperActionTypes | DrwerActionTypes;
+import { gApiSaga } from '../../../app/sagaActions';
 
 const mapStateToProps = (state: RootState) => {
   return {
@@ -25,9 +19,7 @@ const mapStateToProps = (state: RootState) => {
   };
 };
 
-const mapDispatchToProps = (
-  dispatch: ThunkDispatch<RootState, undefined, ActionTypes>
-) => {
+const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
     changeSchedule(event: String) {
       dispatch(changeSchedule(event));
@@ -38,8 +30,8 @@ const mapDispatchToProps = (
     handleDrawer(flag: Boolean) {
       dispatch(handleDrawer(flag));
     },
-    asyncGoogleCalendar(stamp: number, mode: String) {
-      dispatch(asyncGoogleCalendarAction(stamp, mode));
+    asyncGoogleApiSaga(mode: string, stamp: number) {
+      dispatch(gApiSaga({ mode, stamp }));
     },
   };
 };
