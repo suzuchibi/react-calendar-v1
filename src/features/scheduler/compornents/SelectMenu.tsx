@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useSelector } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
@@ -22,12 +21,8 @@ import {
 import {
   changeStatus as changeCalStatus,
   changeCurrent as changeCalCurrent,
-  asyncGoogleCalendarAction as gapi,
 } from '../../calendar/actions/calendarActions';
-import {
-  changeStatus as changeScheStatus,
-  asyncGoogleCalendarAction as gapi2,
-} from '../actions/scheduleActions';
+import { changeStatus as changeScheStatus } from '../actions/scheduleActions';
 
 /**
  * CSS Styling
@@ -106,9 +101,15 @@ function SelectMenu() {
     if (afterStamp !== current) {
       dispatch(changeCalStatus('idle'));
       dispatch(changeCalCurrent(afterStamp));
-      dispatch(gapi(afterStamp, 'all'));
+      dispatch({
+        type: 'app/googleCalendarAPI',
+        payload: { mode: 'all', stamp: afterStamp },
+      });
     } else {
-      dispatch(gapi2(time, 'schedule'));
+      dispatch({
+        type: 'app/googleCalendarAPI',
+        payload: { mode: 'all', stamp: time },
+      });
     }
     history.push(link);
   };
