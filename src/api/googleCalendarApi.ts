@@ -1,5 +1,3 @@
-import config from '../config/app.json';
-
 interface MapProps {
   start: { date: string };
   summary: String;
@@ -20,7 +18,7 @@ class GoogleCalendarAPI {
       if (window.gapi) {
         window.gapi.load('client', () => {
           window.gapi.client
-            .init({ apiKey: config.gapiCal.key })
+            .init({ apiKey: process.env.REACT_APP_G_CALENDAR_API_KEY })
             .then(() => {
               return gapi.client.request({ path: path }).then((res) => {
                 const result = res.result.items.map((e: MapProps) => ({
@@ -35,6 +33,9 @@ class GoogleCalendarAPI {
               reject(msg);
             });
         });
+      } else {
+        const msg = 'Failed to connected Internet';
+        reject(msg);
       }
     });
   };
