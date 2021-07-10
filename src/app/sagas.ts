@@ -14,22 +14,24 @@ import {
   add,
 } from 'date-fns';
 
-interface ApiProps {
+export interface ApiProps {
   type: string;
   payload: SagaProps;
 }
-interface SuccessProps {
+export interface SuccessProps {
   type: string;
   payload: {
     mode: string;
-    result: Holidays;
+    result: Array<Holidays>;
   };
 }
-interface ErrorProps {
+export interface ErrorProps {
   type: string;
-  payload: string;
+  payload: {
+    mode: string;
+  };
 }
-type SagaTypes = CallEffect | PutEffect;
+export type SagaTypes = CallEffect | PutEffect;
 
 /**
  * SetDateText タイムゾーンのテキスト化
@@ -85,7 +87,7 @@ const getTimeZone = (stamp: number, mode: String) => {
  * @param {object} payload
  * @returns {void}
  */
-function* success({
+export function* success({
   payload,
 }: SuccessProps): Generator<PutEffect, void, SuccessProps> {
   const { mode, result } = payload;
@@ -112,8 +114,11 @@ function* success({
  * @param {object} payload modeの値が返る
  * @returns {void}
  */
-function* error({ payload }: ErrorProps): Generator<PutEffect, void, string> {
-  switch (payload) {
+export function* error({
+  payload,
+}: ErrorProps): Generator<PutEffect, void, string> {
+  const { mode } = payload;
+  switch (mode) {
     case 'cal':
       yield put({ type: 'calendar/changeHolidays', payload: [] });
       yield put({ type: 'calendar/changeStatus', payload: 'loaded' });
@@ -144,29 +149,19 @@ export function* googleCalendarApiSaga({
   const param = `timeMin=${start}&timeMax=${end}&singleEvents=true`;
   const encode = encodeURIComponent(config.gapiCal.address);
   const path = `${config.gapiCal.gurl}${encode}/events?${param}`;
-  if (window.gapi) {
-    try {
-      // GoogleCalendarAPIコール
-      const result = yield call(GAPI.start, path);
-      yield put({
-        type: 'app/googleCalendarApiSuccess',
-        payload: { mode: mode, result: result },
-      });
-    } catch (err) {
-      yield put({ type: 'snac/changeMsg', payload: err });
-      yield put({ type: 'snac/changeOpen', payload: true });
-      yield put({
-        type: 'app/googleCalendarApiError',
-        payload: mode,
-      });
-    }
-  } else {
-    const msg = 'Failed to connected Google API';
-    yield put({ type: 'snac/changeMsg', payload: msg });
+  try {
+    // GoogleCalendarAPIコール
+    const result = yield call(GAPI.start, path);
+    yield put({
+      type: 'app/googleCalendarApiSuccess',
+      payload: { mode: mode, result: result },
+    });
+  } catch (err) {
+    yield put({ type: 'snac/changeMsg', payload: err });
     yield put({ type: 'snac/changeOpen', payload: true });
     yield put({
       type: 'app/googleCalendarApiError',
-      payload: mode,
+      payload: { mode: mode },
     });
   }
 }
