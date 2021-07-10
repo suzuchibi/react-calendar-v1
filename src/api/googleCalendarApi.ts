@@ -15,7 +15,7 @@ class GoogleCalendarAPI {
    * @param {string} path
    * @returns {Promise<any>}
    */
-  public start = (path: string): Promise<any> => {
+  public static start = (path: string): Promise<any> => {
     return new Promise((resolve, reject) => {
       if (window.gapi) {
         window.gapi.load('client', () => {
@@ -40,4 +40,4 @@ class GoogleCalendarAPI {
   };
 }
 
-export default new GoogleCalendarAPI();
+export default GoogleCalendarAPI;
