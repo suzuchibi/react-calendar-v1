@@ -1,10 +1,10 @@
 # Google風タイムテーブルカレンダー
-React.js Rudex TypescriptでGoogle風タイムテーブルカレンダーを試作。  
+React + Redux(+ Redux-saga) + TypescriptでGoogle風タイムテーブルカレンダーを実装。  
   
 デモは[こちら](https://cal1.t-suzu.com/)  
 
 ## 概要
-Google風なタイムテーブルカレンダーをReact、Reduxで試作。祝日はGoogleCalendarAPIから取得。CSSフレームワークは Material UI を使用。
+Google風なタイムテーブルカレンダーをReact、Redux + Redux-sagaで実装。祝日はGoogleCalendarAPIから取得。CSSフレームワークは Material UI を使用。
 
 ![demo](/doc/demo.png)
 
