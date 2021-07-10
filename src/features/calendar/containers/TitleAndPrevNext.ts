@@ -1,18 +1,11 @@
-import { ThunkDispatch } from 'redux-thunk';
+import { Dispatch } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
 import { RootState } from '../../../app/reducer';
 import TitleAndPrevNext from '../compornents/TitleAndPrevNext';
 
 // Actions
-import {
-  changeCurrent,
-  changeStatus,
-  asyncGoogleCalendarAction,
-} from '../actions/calendarActions';
-import { CalendarActionTypes } from '../types';
-
-// Combine Types
-type ActionTypes = CalendarActionTypes;
+import { changeCurrent, changeStatus } from '../actions/calendarActions';
+import { gApiSaga } from '../../../app/sagaActions';
 
 const mapStateToProps = (state: RootState) => {
   return {
@@ -20,9 +13,7 @@ const mapStateToProps = (state: RootState) => {
   };
 };
 
-const mapDispatchToProps = (
-  dispatch: ThunkDispatch<RootState, undefined, ActionTypes>
-) => {
+const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
     changeCurrent(event: number) {
       dispatch(changeCurrent(event));
@@ -30,8 +21,8 @@ const mapDispatchToProps = (
     changeStatus(event: String) {
       dispatch(changeStatus(event));
     },
-    asyncGoogleCalendar(stamp: number, mode: String) {
-      dispatch(asyncGoogleCalendarAction(stamp, mode));
+    asyncGoogleApiSaga(mode: string, stamp: number) {
+      dispatch(gApiSaga({ mode, stamp }));
     },
   };
 };
