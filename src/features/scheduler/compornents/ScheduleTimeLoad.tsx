@@ -52,12 +52,10 @@ class ScheduleTimeLoad extends React.Component<Props> {
   }
 
   private init() {
-    const object: { date?: string } = queryString.parse(
-      this.props.location.search
-    );
-    if (object.date) {
-      const after = this.checkDate(object.date);
-      return after;
+    const qs: { date?: string } = queryString.parse(this.props.location.search);
+    if (qs.date) {
+      const timeStamp = this.checkDate(qs.date);
+      return timeStamp;
     } else {
       return this.props.today;
     }
@@ -68,7 +66,7 @@ class ScheduleTimeLoad extends React.Component<Props> {
     this.props.changeSelected(timeStamp);
     // if (this.props.status !== 'idle') {
     if (this.props.status === 'idle') {
-      this.props.asyncGoogleCalendar(timeStamp, 'schedule');
+      this.props.asyncGoogleApiSaga('schedule', timeStamp);
     }
   }
 
