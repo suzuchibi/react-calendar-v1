@@ -9,18 +9,6 @@ import {
   getTime,
 } from 'date-fns';
 
-/*
-type CalTypes = {
-  type: String;
-  value: Number;
-  link: String;
-  jHoliday: Boolean;
-  isToday: Boolean;
-  isSelected: Boolean;
-  timeStamp: number;
-};
-*/
-
 /**
  * Get TimeStamp
  * @param {number} day
