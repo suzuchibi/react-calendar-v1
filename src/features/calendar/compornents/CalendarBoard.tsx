@@ -72,7 +72,7 @@ class CalendarBoard extends React.Component<Props> {
   private click(target: string, stamp: number | undefined, md?: boolean) {
     if (stamp) {
       this.props.changeSchedule('pending');
-      this.props.asyncGoogleCalendar(stamp, 'schedule');
+      this.props.asyncGoogleApiSaga('schedule', stamp);
       if (md) this.props.handleDrawer(true);
       if (this.props.anchor !== null) this.props.changeAnchor(null);
       this.props.history.push(target);
