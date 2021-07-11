@@ -1,6 +1,9 @@
 import isDrawerReducer from './isDrawerReducer';
 
-describe('Reducer Test', () => {
+// Termial
+// yarn test src/features/side/reducer.test.ts
+
+describe('Side Reducer Test', () => {
   test('Init', () => {
     const state = false;
     const result = isDrawerReducer(state, {
