@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScheduleTimeTableSM> スナップショット テスト 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-timeTable-1"
+  >
+    <div
+      class="makeStyles-timeTableDate-2"
+    >
+      <span
+        class="makeStyles-timeTableDateTitle-3"
+      >
+        7/12
+      </span>
+      <span
+        class="makeStyles-timeTableDateDay-4"
+      >
+        月
+      </span>
+    </div>
+    <ul
+      class="makeStyles-timeTableDatas-8"
+    >
+      <li
+        class="makeStyles-timeTableItems-10 makeStyles-color0-14"
+      >
+        <div
+          class="makeStyles-timeTableItem-11"
+        >
+          <div
+            class="makeStyles-timeTableItemLeft-12"
+          >
+            <span>
+              13:00
+            </span>
+            <span>
+              15:00
+            </span>
+          </div>
+          <div
+            class="makeStyles-timeTableItemRight-13"
+          >
+            タイトル3
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
