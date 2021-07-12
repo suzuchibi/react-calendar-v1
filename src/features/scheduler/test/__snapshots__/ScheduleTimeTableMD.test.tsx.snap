@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScheduleTimeWeekMD> スナップショット テスト 1`] = `
+<DocumentFragment>
+  <dl
+    class="makeStyles-timeTableWrap-1"
+  >
+    <dt
+      class="makeStyles-timeTableTitle-2"
+    >
+      <span
+        class="makeStyles-timeTableTitleDate-3"
+      >
+        7/12
+      </span>
+      <span
+        class="makeStyles-timeTableTitleDateDay-4"
+      >
+        月
+      </span>
+    </dt>
+    <dd
+      class="makeStyles-timeTableHoliday-5"
+    >
+      <span
+        class="makeStyles-jHolidayName-9"
+      />
+    </dd>
+    <dd
+      class="makeStyles-timeTableStage-10"
+    >
+      <ul
+        class="makeStyles-timeTableItems-11"
+      >
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeTableItem-12"
+        />
+        <li
+          class="makeStyles-timeData-13 makeStyles-color0-15"
+          style="height: 239px; top: 360px;"
+        >
+          <div>
+            13:00
+          </div>
+          <div
+            class="makeStyles-timeDataTitle-14"
+          >
+            タイトル3
+          </div>
+          <div>
+            15:00
+          </div>
+        </li>
+      </ul>
+    </dd>
+  </dl>
+</DocumentFragment>
+`;
