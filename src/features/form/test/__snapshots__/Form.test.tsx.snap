@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form> スナップショット テスト 1`] = `
+<DocumentFragment>
+  <form
+    autocomplete="off"
+    class="makeStyles-root-1"
+  >
+    <div
+      class="makeStyles-titleBox-2"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        focusable="false"
+        style="font-size: 16px; margin: 0px 4px 0px 0px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+        />
+      </svg>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle2"
+      >
+        Add Form
+      </h6>
+    </div>
+    <div
+      class="MuiFormControl-root MuiTextField-root makeStyles-marginBottom-5 MuiFormControl-fullWidth"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense"
+        data-shrink="false"
+      >
+        タイトル
+      </label>
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense"
+      >
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+          name="title"
+          placeholder="タイトルを入力"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <dl
+      class="makeStyles-reset-3"
+    >
+      <div
+        class="makeStyles-formFlex-6"
+      >
+        <dt
+          class="makeStyles-formTitle-7 makeStyles-reset-3"
+        >
+          年/月/日
+        </dt>
+        <dd
+          class="makeStyles-marginBottom-5 makeStyles-reset-3"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root"
+          >
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiInput-input"
+                name="date"
+                type="date"
+                value="2021-07-12"
+              />
+            </div>
+          </div>
+        </dd>
+      </div>
+      <div
+        class="makeStyles-formFlex-6"
+      >
+        <dt
+          class="makeStyles-formTitle-7 makeStyles-reset-3"
+        >
+          開始〜終了 時間
+        </dt>
+        <dd
+          class="makeStyles-marginBottom-5 makeStyles-reset-3"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root"
+          >
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiInput-input"
+                name="start"
+                type="time"
+                value="17:00"
+              />
+            </div>
+          </div>
+          <span
+            class="makeStyles-marginRight-4"
+          >
+            〜
+          </span>
+          <div
+            class="MuiFormControl-root MuiTextField-root"
+          >
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiInput-input"
+                name="end"
+                type="time"
+                value="18:00"
+              />
+            </div>
+          </div>
+        </dd>
+      </div>
+      <div
+        class="makeStyles-formFlex-6"
+      >
+        <dt
+          class="makeStyles-formTextAreaTitle-9 makeStyles-reset-3"
+        >
+          メモ
+        </dt>
+        <dd
+          class="makeStyles-reset-3"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root makeStyles-formTextArea-10"
+          >
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+            >
+              <textarea
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+                name="memo"
+                rows="4"
+                style="font-size: 14px; line-height: 1.3;"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="PrivateNotchedOutline-root-16 MuiOutlinedInput-notchedOutline"
+                style="padding-left: 8px;"
+              >
+                <legend
+                  class="PrivateNotchedOutline-legend-17"
+                  style="width: 0.01px;"
+                >
+                  <span>
+                    ​
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </dd>
+      </div>
+      <div
+        class="makeStyles-buttonArea-14"
+      >
+        <button
+          aria-label="add"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-okButton-15 MuiButton-disableElevation Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            OK
+          </span>
+        </button>
+        <button
+          aria-label="cancel"
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Cancel
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </dl>
+  </form>
+</DocumentFragment>
+`;

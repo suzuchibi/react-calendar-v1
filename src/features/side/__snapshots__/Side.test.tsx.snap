@@ -1,0 +1,381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Side> スナップショット テスト 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawerWrapper-1"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+    >
+      <ul
+        class="MuiList-root makeStyles-listWrapper-3 MuiList-padding"
+      >
+        <li
+          class="MuiListSubheader-root makeStyles-sideTitle-2 MuiListSubheader-sticky MuiListSubheader-gutters"
+        >
+          Calender
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters"
+        >
+          <div
+            class="Calendar-cal-6"
+          >
+            <div
+              class="TitleAndPrevNext-calNav-8"
+            >
+              <button
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                2021 
+                <span
+                  class="TitleAndPrevNext-calNavJweek-9"
+                >
+                  (令和3年)
+                </span>
+                 / 07
+              </p>
+              <button
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="Calendar-calBox-7"
+            >
+              <ul
+                class="dayOfTheWeek-calWeek-10"
+              >
+                <li
+                  class="dayOfTheWeek-calWeekList-11 dayOfTheWeek-sunday-12"
+                >
+                  日
+                </li>
+                <li
+                  class="dayOfTheWeek-calWeekList-11"
+                >
+                  月
+                </li>
+                <li
+                  class="dayOfTheWeek-calWeekList-11"
+                >
+                  火
+                </li>
+                <li
+                  class="dayOfTheWeek-calWeekList-11"
+                >
+                  水
+                </li>
+                <li
+                  class="dayOfTheWeek-calWeekList-11"
+                >
+                  木
+                </li>
+                <li
+                  class="dayOfTheWeek-calWeekList-11"
+                >
+                  金
+                </li>
+                <li
+                  class="dayOfTheWeek-calWeekList-11 dayOfTheWeek-saturday-13"
+                >
+                  土
+                </li>
+              </ul>
+              <div
+                class="CalendarBoard-calBox-15"
+              >
+                <ul
+                  class="CalendarBoard-calWeek-16"
+                >
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-glayText-24"
+                  >
+                    27
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-glayText-24"
+                  >
+                    28
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-glayText-24"
+                  >
+                    29
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-glayText-24"
+                  >
+                    30
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    1
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    2
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-saturday-21"
+                  >
+                    3
+                  </li>
+                </ul>
+                <ul
+                  class="CalendarBoard-calWeek-16"
+                >
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-sunday-22"
+                  >
+                    4
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    5
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    6
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    7
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    8
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    9
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-saturday-21"
+                  >
+                    10
+                  </li>
+                </ul>
+                <ul
+                  class="CalendarBoard-calWeek-16"
+                >
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-sunday-22"
+                  >
+                    11
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-today-19 CalendarBoard-selected-20"
+                  >
+                    12
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    13
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    14
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    15
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    16
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-saturday-21"
+                  >
+                    17
+                  </li>
+                </ul>
+                <ul
+                  class="CalendarBoard-calWeek-16"
+                >
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-sunday-22"
+                  >
+                    18
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    19
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    20
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    21
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-holiday-23"
+                  >
+                    22
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    23
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-saturday-21"
+                  >
+                    24
+                  </li>
+                </ul>
+                <ul
+                  class="CalendarBoard-calWeek-16"
+                >
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-sunday-22"
+                  >
+                    25
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    26
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    27
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    28
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    29
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18"
+                  >
+                    30
+                  </li>
+                  <li
+                    class="CalendarBoard-calWeekList-17 CalendarBoard-calLink-18 CalendarBoard-saturday-21"
+                  >
+                    31
+                  </li>
+                </ul>
+                <ul
+                  class="CalendarBoard-calWeek-16"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+        <hr
+          class="MuiDivider-root"
+        />
+        <li
+          class="MuiListItem-root MuiListItem-gutters"
+        >
+          <div
+            class="MuiListItemText-root"
+          >
+            <span
+              class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+            >
+              <button
+                aria-label="add"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-centerMargin-4 makeStyles-addButton-5 MuiButton-disableElevation"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                      />
+                    </svg>
+                  </span>
+                  新規登録
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

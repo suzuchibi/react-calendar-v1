@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalendarBoard> スナップショット テスト 1`] = `
+<DocumentFragment>
+  <div
+    class="CalendarBoard-calBox-1"
+  >
+    <ul
+      class="CalendarBoard-calWeek-2"
+    >
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-glayText-10"
+      >
+        27
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-glayText-10"
+      >
+        28
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-glayText-10"
+      >
+        29
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-glayText-10"
+      >
+        30
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        1
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        2
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-saturday-7"
+      >
+        3
+      </li>
+    </ul>
+    <ul
+      class="CalendarBoard-calWeek-2"
+    >
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-sunday-8"
+      >
+        4
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        5
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        6
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        7
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        8
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        9
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-saturday-7"
+      >
+        10
+      </li>
+    </ul>
+    <ul
+      class="CalendarBoard-calWeek-2"
+    >
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-sunday-8"
+      >
+        11
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-today-5 CalendarBoard-selected-6"
+      >
+        12
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        13
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        14
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        15
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        16
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-saturday-7"
+      >
+        17
+      </li>
+    </ul>
+    <ul
+      class="CalendarBoard-calWeek-2"
+    >
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-sunday-8"
+      >
+        18
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        19
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        20
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        21
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-holiday-9"
+      >
+        22
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        23
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-saturday-7"
+      >
+        24
+      </li>
+    </ul>
+    <ul
+      class="CalendarBoard-calWeek-2"
+    >
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-sunday-8"
+      >
+        25
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        26
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        27
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        28
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        29
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4"
+      >
+        30
+      </li>
+      <li
+        class="CalendarBoard-calWeekList-3 CalendarBoard-calLink-4 CalendarBoard-saturday-7"
+      >
+        31
+      </li>
+    </ul>
+    <ul
+      class="CalendarBoard-calWeek-2"
+    />
+  </div>
+</DocumentFragment>
+`;

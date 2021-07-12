@@ -1,14 +1,17 @@
 import { handleDrawer } from './isDrawerReducer';
 
+// Termial
+// yarn test src/features/side/action.test.ts
+
 describe('Action Test', () => {
-  test('Handle Drawer テスト', () => {
+  it('Handle Drawer テスト', () => {
     const result = handleDrawer(true);
-    const check = {
+    // 期待値
+    const expected = {
       type: 'drawer/change',
       payload: true,
     };
 
-    // test
-    expect(result).toEqual(check);
+    expect(result).toEqual(expected);
   });
 });
