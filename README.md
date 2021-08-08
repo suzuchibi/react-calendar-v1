@@ -12,7 +12,7 @@ Google風なタイムテーブルカレンダーをReact、Redux + Redux-sagaで
 ![sample](/doc/original.gif)
 
 ## 開発環境
-- node.js 14.17.4 (安定板)
+- node.js 14.17.4 (安定版)
 - yarn 1.22+
 - react 17.0.1
 - redux 7.2.2
